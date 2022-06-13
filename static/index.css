@@ -1,0 +1,49 @@
+h1, p, input {
+    font-family: 'Lato', sans-serif;
+}
+
+#speechContainer {
+    margin: 20px;
+    border: darkcyan;
+    border-radius: 5px;
+    border-color: black;
+    border-width: 0vmax;
+}
+
+#submitButton {
+    background-color: #0191FE;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-color: black;
+    border-width: 0vmax;
+}
+
+#submitButton:hover {
+    cursor: pointer;
+}
+
+#speechTranscriptContainer {
+    margin-top: 20px;
+    border: deeppink;
+    border-radius: 10px;
+    border-color: black;
+    border-width: 0vmax;
+}
+
+#speechText {
+    font-size: 20px;
+    width: 1000px;
+    color: blue;
+    border-radius: 10px;
+    border-color: black;
+    border-width: 0vmax;
+}
+body {
+    background-color:lightgrey;
+    border-style: solid;
+    border-width: 5px;
+    border-color: blueviolet;
+}
