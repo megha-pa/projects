@@ -1,0 +1,13 @@
+google-cloud-bigquery
+pandas
+numpy
+fsspec
+gcsfs
+pyarrow 
+tqdm
+matplotlib
+kfp==1.8.12
+google-cloud
+google-cloud-aiplatform
+datatest
+pytest

@@ -1,0 +1,45 @@
+steps:
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  args: ['source','repos','clone','demo_az', 'project = ${_PROJECT}']
+  entrypoint: 'gcloud'
+  id: 'clone repo'
+  
+- name: python
+  entrypoint: pip
+  args: ["install","--upgrade","pip"]     
+  id: 'upgrade pip'
+      
+- name: python
+  entrypoint: pip
+  args: ["install", "-r", "requirements.txt", "--user"]
+  id: 'install dependencies'
+  
+- name: python
+  entrypoint: 'python'
+  args: ["unit_test.py"]
+  id: 'pytest test'
+  
+- name: 'docker.io/library/python:3.7'
+  entrypoint: /bin/sh
+  args:
+  - -c
+  - 'pip3 install black && black demo_pipeline.py'
+  id: 'black_formatter'
+
+- name: python
+  entrypoint: 'python'
+  args: ['demo_pipeline.py']
+  id: 'Compile Pipeline'
+  
+- name: 'gcr.io/cloud-builders/gsutil'
+  args: ['cp', 'azdemo-pipeline.json','gs://welspun_mlops_data1']
+  id:  'Upload Pipeline to GCS'
+  waitFor: ['Compile Pipeline']
+  
+
+timeout: 3600s
+  
+substitutions:
+  _PROJECT: pod-devops
+  _BUCKET:  gs://welspun_mlops_data1
+
