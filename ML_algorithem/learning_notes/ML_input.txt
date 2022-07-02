@@ -1,0 +1,36 @@
+employer will leave or not
+https://github.com/pydeveloperashish/Predicting-which-of-your-Employee-will-Quit-your-Company-Data-Science-Project
+
+
+There are mainly 4 types of Machine Learning
+1.Supervised-we have labeled data or input data from which we model learns
+I.Regression-when target is numerical data
+II.classification-when target is categorical
+
+2.Unsupervised-we dont have output or labeled data
+I.clustering-create group of similar
+II.Dimenatinality reduction-reduce the column(PCA)
+III.Anamoly detection- any kind of defect ex removing outlier from syatem such as credict card fraud
+IV.Association Rule-its like if we buy milk even bread is brought so help in systematic aarangement
+
+3.Semisupervised-Ex labeling task
+
+4.Reinforcement Learning-learns from reward self driving car
+
+BATCH VS OFFLINE PREDICTION
+Batch prediction-we train on entire data and we deploy it on production enviorement and once new data is added we retrain it and run on prodcution enviorement
+
+Disadvantages of batch prediction
+1.lot of data 
+2.hardware limitation
+3.availablity becasue system is updated only after specified time
+
+online Machine Learning
+when data is changing very dynamic and we want faster result
+
+Tesnor=container for storing the data if
+0-scaler
+[1,2]-1 d
+
+
+
