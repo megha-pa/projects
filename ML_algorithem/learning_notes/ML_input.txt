@@ -1,6 +1,10 @@
 employer will leave or not
 https://github.com/pydeveloperashish/Predicting-which-of-your-Employee-will-Quit-your-Company-Data-Science-Project
+Seaborn Playlist
+https://www.youtube.com/playlist?list...
 
+Matplotlib
+https://www.youtube.com/watch?v=x_OKq...
 
 There are mainly 4 types of Machine Learning
 1.Supervised-we have labeled data or input data from which we model learns
